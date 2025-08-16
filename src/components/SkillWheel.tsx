@@ -112,11 +112,11 @@ export default function SkillWheel() {
   const [typingComplete, setTypingComplete] = useState(false)
   
   const timersRef = useRef<{
-    genieTimer?: NodeJS.Timeout
-    messageTimer?: NodeJS.Timeout
-    speechTimer?: NodeJS.Timeout
-    resetTimer?: NodeJS.Timeout
-    typingTimer?: NodeJS.Timeout
+    genieTimer?: ReturnType<typeof setTimeout>
+    messageTimer?: ReturnType<typeof setTimeout>
+    speechTimer?: ReturnType<typeof setTimeout>
+    resetTimer?: ReturnType<typeof setTimeout>
+    typingTimer?: ReturnType<typeof setTimeout>
   }>({})
   
   const messageIndexRef = useRef(0)
