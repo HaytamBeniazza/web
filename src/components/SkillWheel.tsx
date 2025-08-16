@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
+import React from 'react'
 
 interface SkillCategory {
   title: string
   items: string[]
-  icon: () => JSX.Element
+  icon: () => React.ReactElement
 }
 
 const skillCategories: SkillCategory[] = [

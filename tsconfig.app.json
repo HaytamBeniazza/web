@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "types": ["react", "react-dom", "node"]
+    "types": ["react", "react-dom", "vite/client"]
   },
   "include": ["src"]
 }

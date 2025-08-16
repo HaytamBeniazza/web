@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface Project {
   title: string;
   desc: string;
@@ -6,7 +8,7 @@ export interface Project {
 }
 
 export interface TechIcon {
-  [key: string]: () => JSX.Element;
+  [key: string]: () => React.ReactElement;
 }
 
 export interface SkillCategory {
@@ -27,7 +29,7 @@ export interface ContactMethod {
 export interface SocialLink {
   platform: string;
   url: string;
-  icon: () => JSX.Element;
+  icon: () => React.ReactElement;
   description: string;
 }
 

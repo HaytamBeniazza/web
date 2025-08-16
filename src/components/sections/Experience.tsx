@@ -29,7 +29,7 @@ const Experience = () => {
           {/* Timeline Line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-400 via-purple-400 to-transparent opacity-30"></div>
 
-          {experienceData.map((experience, index) => (
+          {experienceData.map((experience, _index) => (
             <div key={experience.id} className="relative mb-12 last:mb-0">
               {/* Timeline Dot */}
               <div className="absolute left-6 w-4 h-4 bg-sky-400 rounded-full border-4 border-gray-900 shadow-lg shadow-sky-400/50"></div>
